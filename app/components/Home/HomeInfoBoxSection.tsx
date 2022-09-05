@@ -19,7 +19,7 @@ const json = {
   createdAt: "2022-02-01T02:25:41-05:00",
   tint: "#EAB308",
   webpages: "https://www.theonion.com/",
-  youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  youtube: "https://www.bilibili.com/video/BV1VY4y1J7so/",
   json: "bourne",
 };
 
@@ -85,15 +85,15 @@ function HomeInfoBoxSectionContent() {
 
   return (
     <HomeSection containerClassName="bg-black p-6">
-      <div className="md:pr-4 lg:pr-10 flex flex-col w-full md:w-1/2">
-        <ExtraLargeTitle className="text-white mb-4">
+      <div className="flex flex-col w-full md:pr-4 lg:pr-10 md:w-1/2">
+        <ExtraLargeTitle className="mb-4 text-white">
           <span className=" text-lime-300">{infoBoxData[index].title}</span> are
           more than just strings
         </ExtraLargeTitle>
-        <SmallSubtitle className="text-slate-400 mb-10">
+        <SmallSubtitle className="mb-10 text-slate-400">
           We figure out what your strings are made of, so you don't have to.
         </SmallSubtitle>
-        <ul className="flex w-full text-slate-300 mb-3">
+        <ul className="flex w-full mb-3 text-slate-300">
           {infoBoxData.map((value, i) => {
             return (
               <li
@@ -120,7 +120,7 @@ function HomeInfoBoxSectionContent() {
           />
         </div>
       </div>
-      <div className="relative pointer-events-none w-full md:w-1/2 flex flex-col justify-center items-center py-5">
+      <div className="relative flex flex-col items-center justify-center w-full py-5 pointer-events-none md:w-1/2">
         <div className="absolute z-10 bottom-0 w-full h-[200px] bg-gradient-to-t from-slate-900 to-transparent"></div>
         <div className="min-w-full max-w-full p-4 rounded-sm bg-slate-900 h-[65vh] overflow-y-auto">
           <div className="mb-4">

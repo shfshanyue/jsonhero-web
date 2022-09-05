@@ -18,7 +18,7 @@ export function HomeHeader({ fixed }: { fixed?: boolean }) {
         fixed ? "fixed" : ""
       } z-20 flex items-center justify-between w-screen h-[82px] px-4 bg-indigo-700`}
     >
-      <div className="flex w-36 sm:w-44 mr-3">
+      <div className="flex mr-3 w-36 sm:w-44">
         <Logo />
       </div>
       <ol className="flex items-center gap-2">
@@ -31,7 +31,7 @@ export function HomeHeader({ fixed }: { fixed?: boolean }) {
           <PopoverContent side="bottom" sideOffset={30}>
             <NewDocument />
             <PopoverArrow
-              className="fill-current text-indigo-700"
+              className="text-indigo-700 fill-current"
               offset={20}
             />
           </PopoverContent>
@@ -40,21 +40,21 @@ export function HomeHeader({ fixed }: { fixed?: boolean }) {
         <li className="hover:cursor-pointer">
           <GithubStar />
         </li>
-        <li className="hover:cursor-pointer opacity-90 hover:opacity-100 transition">
+        {/* <li className="transition hover:cursor-pointer opacity-90 hover:opacity-100">
           <a href="mailto:hello@jsonhero.io">
             <EmailIconTransparent />
           </a>
         </li>
-        <li className="hover:cursor-pointer opacity-90 hover:opacity-100 transition">
+        <li className="transition hover:cursor-pointer opacity-90 hover:opacity-100">
           <a href="https://discord.gg/ZQq6Had5nP" target="_blank">
             <DiscordIconTransparent />
           </a>
         </li>
-        <li className="hover:cursor-pointer opacity-90 hover:opacity-100 transition">
+        <li className="transition hover:cursor-pointer opacity-90 hover:opacity-100">
           <a href="https://twitter.com/tryapihero" target="_blank">
             <TwitterIcon />
           </a>
-        </li>
+        </li> */}
       </ol>
     </header>
   );

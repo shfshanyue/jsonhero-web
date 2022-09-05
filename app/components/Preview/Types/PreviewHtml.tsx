@@ -79,7 +79,7 @@ export function PreviewHtml({ info }: PreviewHtmlProps) {
         {info.title && (
           <Title>
             {info.icon && (
-              <img src={info.icon.url} className="w-4 h-4 inline mr-1" />
+              <img src={info.icon.url} className="inline w-4 h-4 mr-1" />
             )}
             <span className="inline">{info.title}</span>
           </Title>

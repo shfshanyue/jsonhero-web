@@ -12,6 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "./UI/Popover";
+import { Body } from "./Primitives/Body";
 
 export function Header() {
   return (
@@ -21,7 +22,7 @@ export function Header() {
       <ol className="flex items-center gap-2 px-4">
         <Popover>
           <PopoverTrigger>
-            <button className="flex items-center justify-center bg-lime-500 text-slate-800 bg-opacity-90 text-base font-bold px-2 py-1 rounded-sm uppercase hover:cursor-pointer hover:bg-opacity-100 transition">
+            <button className="flex items-center justify-center px-2 py-1 text-base font-bold uppercase transition rounded-sm bg-lime-500 text-slate-800 bg-opacity-90 hover:cursor-pointer hover:bg-opacity-100">
               <PlusIcon className="w-4 h-4 mr-0.5"></PlusIcon>
               New
             </button>
@@ -29,7 +30,7 @@ export function Header() {
           <PopoverContent side="bottom" sideOffset={8}>
             <NewDocument />
             <PopoverArrow
-              className="fill-current text-indigo-700"
+              className="text-indigo-700 fill-current"
               offset={20}
             />
           </PopoverContent>
@@ -37,7 +38,7 @@ export function Header() {
 
         <Popover>
           <PopoverTrigger>
-            <button className="flex items-center justify-center py-1 bg-slate-200 text-slate-800 bg-opacity-90 text-base font-bold px-2 rounded-sm uppercase hover:cursor-pointer hover:bg-opacity-100 transition">
+            <button className="flex items-center justify-center px-2 py-1 text-base font-bold uppercase transition rounded-sm bg-slate-200 text-slate-800 bg-opacity-90 hover:cursor-pointer hover:bg-opacity-100">
               <ShareIcon className="w-4 h-4 mr-1"></ShareIcon>
               Share
             </button>
@@ -45,25 +46,36 @@ export function Header() {
           <PopoverContent side="bottom" sideOffset={8}>
             <Share />
             <PopoverArrow
-              className="fill-current text-indigo-700"
+              className="text-indigo-700 fill-current"
               offset={20}
             />
           </PopoverContent>
         </Popover>
 
-        <li className="opacity-90 transition hover:cursor-pointer hover:opacity-100">
+        <li className="transition opacity-90 hover:cursor-pointer hover:opacity-100">
           <GithubStar />
         </li>
-         <li className="hover:cursor-pointer opacity-90 hover:opacity-100 transition">
+        <li className="transition hover:cursor-pointer opacity-90 hover:opacity-100">
+          <a
+            href="https://apifox.cn/a1shanyue"
+            target="_blank"
+            className="flex transition text-slate-700 opacity-90 hover:cursor-pointer hover:opacity-100"
+          >
+            <div className="flex items-center gap-1 px-2 py-1 rounded-l-sm p2-1 bg-slate-300">
+              <Body className="font-semibold text-slate-800">Apifox</Body>
+            </div>
+          </a>
+        </li>
+        {/* <li className="transition hover:cursor-pointer opacity-90 hover:opacity-100">
           <a href="mailto:hello@jsonhero.io">
             <EmailIconTransparent />
           </a>
         </li>
-        <li className="opacity-90 transition hover:cursor-pointer hover:opacity-100">
+        <li className="transition opacity-90 hover:cursor-pointer hover:opacity-100">
           <a href="https://discord.gg/ZQq6Had5nP" target="_blank">
             <DiscordIconTransparent />
           </a>
-        </li>
+        </li> */}
       </ol>
     </header>
   );

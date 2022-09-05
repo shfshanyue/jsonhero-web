@@ -18,7 +18,7 @@ export default function Index() {
       <HomeEdgeCasesSection />
       <HomeSearchSection />
       <HomeCollaborateSection />
-      <HomeFeatureGridSection />
+      {/* <HomeFeatureGridSection /> */}
       <HomeFooter />
     </div>
   );

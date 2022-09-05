@@ -14,14 +14,14 @@ export function GithubStar({ className }: GithubStarProps) {
     <a
       href="https://github.com/apihero-run/jsonhero-web"
       target="_blank"
-      className="flex text-slate-700 opacity-90 transition hover:cursor-pointer hover:opacity-100"
+      className="flex transition text-slate-700 opacity-90 hover:cursor-pointer hover:opacity-100"
     >
-      <div className="flex items-center gap-1 pr-2 pl-1 py-1 bg-slate-300 rounded-l-sm">
+      <div className="flex items-center gap-1 py-1 pl-1 pr-2 rounded-l-sm bg-slate-300">
         <GithubIconSimple className="w-4 h-4 ml-1"></GithubIconSimple>
-        <Body className="font-semibold text-slate-800">Star</Body>
+        <Body className="font-semibold text-slate-800">Fork</Body>
       </div>
       {starCount && (
-        <div className="px-2 py-1 border-l border-slate-400 bg-slate-100 rounded-r-sm">
+        <div className="px-2 py-1 border-l rounded-r-sm border-slate-400 bg-slate-100">
           <Body className="font-bold">{formatStarCount(starCount)}</Body>
         </div>
       )}
